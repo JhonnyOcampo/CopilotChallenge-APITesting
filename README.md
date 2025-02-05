@@ -2,13 +2,13 @@
 Using the knowledge acquired in the GitHub Copilot training, we challenge you to create an automation project to test an API of a [Banking Portal.](https://github.com/abhi9720/BankingPortal-API)
 
 ## Challenge
-In any programming language and frameworks of your choice, create a test automation project that fulfills the following requirements:
-1. The project should be implemented using GitHub Copilot.
-2. The tests should be written using Gerkin syntax, it means the project should implement a BDD framework.
-3. The project should implement a dependency management tool (e.g. Maven).
-4. The project should generate a report after running the tests.
-5. Create a Pipeline that runs all the tests and generates a report, you can use any CI/CD tool of your choice and with the help of Copilot write the infraestructure code needed.
-6. Create test cases for at least the following features:
+In any programming language and framework of your choice, create a test automation project that fulfills the following requirements:
+1. Implement the code using GitHub Copilot assistance.
+2. Write the tests using Gerkin syntax, consider implementing an existing BDD framework.
+3. Include the code or framework needed to generate a report with the test results.
+4. Implement a dependency management tool (e.g., Maven).
+5. Create a Pipeline that runs all the tests and generates a test result report. You can use any CI/CD tool and write the infrastructure code needed with the Copilot assistance.
+6. Create automated tests for at least the following features of the [Banking Portal.](https://github.com/abhi9720/BankingPortal-API):
     - Register user
     - Login user
     - Create a PIN
