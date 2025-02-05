@@ -59,7 +59,7 @@ In order to run the application that exposes the API, we need to install and con
     ```
     This command downloads a test image and runs it in a container. When the container runs, it prints a confirmation message and exits.
 
-7. Download the file [bankingportal-image.tar](https://drive.google.com/file/d/1H-BYg3uof64wqhVMdfoGY5figad0BIV4/view?usp=sharing) and the file `compose.yaml` from this repository to your windows machine.
+7. Download the file [bankingportal-image.tar](https://drive.google.com/file/d/1H-BYg3uof64wqhVMdfoGY5figad0BIV4/view?usp=sharing) and the file[compose.yaml](compose.yaml) from this repository to your windows machine.
 
 8. Create a folder called docker using the command `mkdir docker` in the Ubuntu terminal.
    
