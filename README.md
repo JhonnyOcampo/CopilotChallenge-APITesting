@@ -69,7 +69,7 @@ In order to run the application that exposes the API, we need to install and con
 
 11. Cut and paste the downloaded files `bankingportal-image.tar` and `compose.yaml` to this path:
     ```
-    \\wsl.localhost\<ubuntu>\home\<username>\docker´
+    \\wsl.localhost\<ubuntu>\home\<username>\docker
     ```
     `<ubuntu>` is the Ubuntu version you installted.
     `<username>` is the user name you set for Ubuntu.
