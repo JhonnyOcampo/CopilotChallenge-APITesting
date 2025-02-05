@@ -1,0 +1,16 @@
+services:      
+  backend:
+    image: bankingportal:latest
+    restart: on-failure:2
+    depends_on:
+        - db
+    ports:
+        - "8180:8180"
+        
+  db:
+    image: mysql:latest
+    environment:
+        MYSQL_DATABASE: bankingapp
+        MYSQL_ROOT_PASSWORD: Mysql2025*
+    ports:
+        - "3306:3306"
