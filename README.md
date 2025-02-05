@@ -28,6 +28,7 @@ In order to run the application that exposes the API, we need to install and con
    ![Captura de pantalla 2025-02-04 162921](https://github.com/user-attachments/assets/08171a3f-11cf-4fe7-8bfa-5310ce6990df)
 
    You can also access Ubuntu if you manually open a windows terminal (Command Prompt app), select the down arrowhead located at the top and then click on Ubuntu:
+   
    ![Captura de pantalla 2025-02-05 000832](https://github.com/user-attachments/assets/9d6010a9-4bfb-46d3-90ee-ffab703c798f)
 
 5. We need to set up the Docker `apt` repository. Execute the following commands in the Ubuntu terminal:
