@@ -59,21 +59,27 @@ In order to run the application that exposes the API, we need to install and con
     ```
     This command downloads a test image and runs it in a container. When the container runs, it prints a confirmation message and exits.
 
-7. Download the files ´bankingportal-image.tar´ and ´compose.yaml´ from this repository to your windows machine.
+7. Download the files `bankingportal-image.tar` and `compose.yaml` from this repository to your windows machine.
 
 8. Create a folder called docker using the command `mkdir docker` in the Ubuntu terminal.
    
 9. In Windows, open the File Explorer, click on the new item created called Linux and you will find a folder where you can have access to the Ubuntu files.
-    ![image](https://github.com/user-attachments/assets/65a5875d-b81a-41db-a312-8b1ee151492a)
+    
+   ![image](https://github.com/user-attachments/assets/65a5875d-b81a-41db-a312-8b1ee151492a)
 
-10. Cut and paste the downloaded files ´bankingportal-image.tar´ and ´compose.yaml´ to this path:
+11. Cut and paste the downloaded files `bankingportal-image.tar` and `compose.yaml` to this path:
     ```
     \\wsl.localhost\<ubuntu>\home\<username>\docker´
     ```
     <ubuntu> is the Ubuntu version you installted.
     <username> is the user name you set for Ubuntu.
 
-11.
+12. In the Ubuntu terminal, open the folder docker `cd docker`, and execute the following command:
+    ```
+    sudo docker compose up
+    ```
+    When the command finish loading, you can check if the API is up by opening this link in your browser `http://localhost:8180/api/dashboard/user` and verifying it returns the folllowing message:
+    ![image](https://github.com/user-attachments/assets/9cfa0b85-168e-4f62-81de-9627de9bb20e)
 
     
 
