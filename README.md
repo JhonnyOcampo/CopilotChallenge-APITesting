@@ -86,3 +86,6 @@ In order to run the application that exposes the API, we need to install and con
 
 ## Installing and setting up GitHub Copilot
 If you have not installed or set up GitHub Copilot, please follow the instructions according to your IDE in this link [Quickstart for GitHub Copilot](https://docs.github.com/en/copilot/quickstart?tool=visualstudio)
+
+## Where to start
+Create a new project of your favorite programming language and add files
