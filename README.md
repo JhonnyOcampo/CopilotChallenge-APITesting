@@ -1,4 +1,4 @@
-# GitHub Copilot - Testing Challenge
+# GitHub Copilot Challenge for API Testing
 
 In order to practice what we have learned so far, we will be working on a testing challenge. The challenge consists of creating an automation test suite for an API of a [Banking Portal.](https://github.com/abhi9720/BankingPortal-API)
 
@@ -14,4 +14,3 @@ From scratch, create a test automation project in any programming language and f
     - Login user
     - Create a PIN
     - Deposit funds
-    - Withdraw funds
