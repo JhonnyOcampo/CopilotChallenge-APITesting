@@ -31,32 +31,49 @@ In order to run the application that exposes the API, we need to install and con
    
    ![Captura de pantalla 2025-02-05 000832](https://github.com/user-attachments/assets/9d6010a9-4bfb-46d3-90ee-ffab703c798f)
 
-5. We need to set up the Docker `apt` repository. Execute the following commands in the Ubuntu terminal:
-
-```
-sudo apt-get update
-sudo apt-get install ca-certificates curl
-sudo install -m 0755 -d /etc/apt/keyrings
-sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
-sudo chmod a+r /etc/apt/keyrings/docker.asc
-
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
-  $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" | \
-  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-sudo apt-get update
-```
+4. We need to set up the Docker `apt` repository. Execute the following commands in the Ubuntu terminal:
+    
+    ```
+    sudo apt-get update
+    sudo apt-get install ca-certificates curl
+    sudo install -m 0755 -d /etc/apt/keyrings
+    sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+    sudo chmod a+r /etc/apt/keyrings/docker.asc
+    
+    echo \
+      "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+      $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" | \
+      sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    sudo apt-get update
+    ```
 
 5. Install the Docker packages:
 
-```
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-```
+    ```
+    sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+    ```
 
 6. Verify that the installation is successful by running the `hello-world` image:
-```
-sudo docker run hello-world
-```
-This command downloads a test image and runs it in a container. When the container runs, it prints a confirmation message and exits.
+    ```
+    sudo docker run hello-world
+    ```
+    This command downloads a test image and runs it in a container. When the container runs, it prints a confirmation message and exits.
 
+7. Download the files ´bankingportal-image.tar´ and ´compose.yaml´ from this repository to your windows machine.
+
+8. Create a folder called docker using the command `mkdir docker` in the Ubuntu terminal.
+   
+9. In Windows, open the File Explorer, click on the new item created called Linux and you will find a folder where you can have access to the Ubuntu files.
+    ![image](https://github.com/user-attachments/assets/65a5875d-b81a-41db-a312-8b1ee151492a)
+
+10. Cut and paste the downloaded files ´bankingportal-image.tar´ and ´compose.yaml´ to this path:
+    ```
+    \\wsl.localhost\<ubuntu>\home\<username>\docker´
+    ```
+    <ubuntu> is the Ubuntu version you installted.
+    <username> is the user name you set for Ubuntu.
+
+11.
+
+    
 
