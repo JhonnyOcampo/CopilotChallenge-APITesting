@@ -71,8 +71,8 @@ In order to run the application that exposes the API, we need to install and con
     ```
     \\wsl.localhost\<ubuntu>\home\<username>\docker´
     ```
-    <ubuntu> is the Ubuntu version you installted.
-    <username> is the user name you set for Ubuntu.
+    `<ubuntu>` is the Ubuntu version you installted.
+    `<username>` is the user name you set for Ubuntu.
 
 12. In the Ubuntu terminal, open the folder docker `cd docker`, and execute the following commands:
     ```
