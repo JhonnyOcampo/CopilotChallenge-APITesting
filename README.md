@@ -74,12 +74,13 @@ In order to run the application that exposes the API, we need to install and con
     <ubuntu> is the Ubuntu version you installted.
     <username> is the user name you set for Ubuntu.
 
-12. In the Ubuntu terminal, open the folder docker `cd docker`, and execute the following command:
+12. In the Ubuntu terminal, open the folder docker `cd docker`, and execute the following commands:
     ```
+    sudo docker load --input bankingportal-image.tar
     sudo docker compose up
     ```
     When the command finish loading, you can check if the API is up by opening this link in your browser `http://localhost:8180/api/dashboard/user` and verifying it returns the folllowing message:
     ![image](https://github.com/user-attachments/assets/9cfa0b85-168e-4f62-81de-9627de9bb20e)
 
-    
+    Now, you can start testing!
 
