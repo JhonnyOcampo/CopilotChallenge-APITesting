@@ -27,6 +27,35 @@ In order to run the application that exposes the API, we need to install and con
 3. After installing Ubuntu, click open and a Windows terminal will ask you to create a username and password for Ubuntu.
    ![Captura de pantalla 2025-02-04 162921](https://github.com/user-attachments/assets/08171a3f-11cf-4fe7-8bfa-5310ce6990df)
 
+   You can also access Ubuntu if you manually open a windows terminal (Command Prompt app), select the down arrowhead located at the top and then click on Ubuntu:
+   ![Captura de pantalla 2025-02-05 000832](https://github.com/user-attachments/assets/9d6010a9-4bfb-46d3-90ee-ffab703c798f)
+
+4. We need to set up the Docker `apt` repository. Execute the following commands in the Ubuntu terminal:
+
+```
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+```
+
+5. Install the Docker packages:
+
+```
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
+6. Verify that the installation is successful by running the `hello-world` image:
+```
+sudo docker run hello-world
+```
+This command downloads a test image and runs it in a container. When the container runs, it prints a confirmation message and exits.
 
 
-   
