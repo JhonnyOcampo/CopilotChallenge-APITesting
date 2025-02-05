@@ -93,7 +93,8 @@ If you have not installed or set up GitHub Copilot, please follow the instructio
    --- | ---
    [API-Documentation.md](API-Documentation.md) | This is the API documentation of the Banking Portal App, this document is more up-to-date than the one you find in the [Banking Portal wiki](https://github.com/abhi9720/BankingPortal-API/wiki), So I recommend using this instead.
    [api-docs.json](api-docs.json) | This json that contains the information of this [Swagger page](http://localhost:8180/swagger-ui/index.html).
-    Therefore, you need to add these files to your project and include them as context in the Copilot Chat.  
-3. In the Github Copilot chat, start asking questions like how to create an API test automation project or which frameworks you can use for API testing using your preferred language.
-4. Then, create prompts to ask Copilot to create tests for specific features and consider the constraints that are specified in the challenge.
+   
+   Therefore, you need to add these files to your project and include them as context in the Copilot Chat.  
+4. In the Github Copilot chat, start asking questions like how to create an API test automation project or which frameworks you can use for API testing using your preferred language.
+5. Then, create prompts to ask Copilot to create tests for specific features and consider the constraints that are specified in the challenge.
    
