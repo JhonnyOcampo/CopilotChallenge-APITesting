@@ -14,3 +14,10 @@ From scratch, create a test automation project in any programming language and f
     - Login user
     - Create a PIN
     - Deposit funds
+
+## Setting up the API to be tested
+In order to run the application that exposes the API, we need to install and configure WSL2 and Docker Compose.
+
+1. From the company portal app, look for WSL2 and click on install.
+   ![image](https://github.com/user-attachments/assets/14d0dfde-350c-4e5b-983c-bee1e2a17b81)
+   
